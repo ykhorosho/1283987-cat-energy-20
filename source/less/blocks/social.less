@@ -1,7 +1,7 @@
 .social__list {
   .clear-list;
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
+  // outline: 3px solid rgba(255, 0, 0, 0.8);
+  // outline-offset: -3px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -14,8 +14,14 @@
 .social {
   width: 130px;
   margin: 0 auto;
+  padding: 20px;
+  border-top: 1px solid @grey-2;
+  border-bottom: 1px solid @grey-2;
 
   @media (min-width: @tablet-width) {
     margin: auto;
+    border-top: none;
+    border-bottom: none;
+    padding: 0;
   }
 }

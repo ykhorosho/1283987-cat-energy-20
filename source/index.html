@@ -13,12 +13,14 @@
 
   <header class="page-header">
     <div class="container page-header__container">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__image" src="img/logo-mobile.svg" width="191" height="37.61"
-          alt="Логотип «Кэт энерджи»">
-      </a>
+      <div class="page-header__menu">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__image" src="img/logo-mobile.svg" width="191" height="37.61"
+            alt="Логотип «Кэт энерджи»">
+        </a>
+      </div>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -171,6 +173,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main-nav--nojs.js"></script>
 
 </body>
 

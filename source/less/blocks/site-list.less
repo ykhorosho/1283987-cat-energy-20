@@ -6,4 +6,52 @@
   text-transform: uppercase;
   color: @black-two;
   list-style: none;
+
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+    display: block;
+    padding: 22px;
+    padding-bottom: 24px;
+    border-top: 1px solid @grey-border;
+    border-bottom: 1px solid @grey-border;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 10px;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: @basic_green;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+.site-list__item a {
+  @media (min-width: @tablet-width) {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

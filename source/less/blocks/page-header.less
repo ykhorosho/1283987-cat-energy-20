@@ -1,6 +1,6 @@
 .page-header__logo {
-  outline: 5px solid rgba(20, 0, 0, 0.8);
-  outline-offset: -5px;
+  // outline: 5px solid rgba(20, 0, 0, 0.8);
+  // outline-offset: -5px;
 
   width: 190px;
   display: block;
@@ -16,8 +16,8 @@
 }
 
 .page-header {
-  outline: 3px solid rgba(105, 0, 0, 0.8);
-  outline-offset: -3px;
+  // outline: 3px solid rgba(105, 0, 0, 0.8);
+  // outline-offset: -3px;
 
   margin: 0 auto;
   padding-top: 12px;
@@ -39,5 +39,15 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.page-header__logo img {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

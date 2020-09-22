@@ -6,9 +6,22 @@
   line-height: 18px;
   color: @text-color;
 
+  &::before  {
+    content: "";
+    position: absolute;
+    background: @basic_green;
+    height: 60px;
+    width: 60px;
+    background-image: url("../img/icon_leaf.svg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    }
+
   @media (min-width: @tablet-width) {
     outline: 3px solid rgba(255, 0, 0, 0.8);
     outline-offset: -3px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -19,6 +32,11 @@
   line-height: 40px;
   color: @black-two;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .works__list {
@@ -27,6 +45,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 20px;
+  padding-top: 28px;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -45,4 +64,13 @@
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -3px;
   margin: 0 auto;
+  padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 71px;
+  }
 }
