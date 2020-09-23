@@ -5,6 +5,7 @@
   font-size: 14px;
   line-height: 18px;
   color: @text-color;
+  // padding-bottom: 20px;
 
   &::before  {
     content: "";
@@ -12,8 +13,6 @@
     background: @basic_green;
     height: 60px;
     width: 60px;
-    background-image: url("../img/icon_leaf.svg");
-    background-repeat: no-repeat;
     margin: 0 auto;
     }
 
@@ -22,6 +21,12 @@
     outline-offset: -3px;
     font-size: 16px;
     line-height: 24px;
+    position: relative;
+
+    &::before  {
+      height: 80px;
+      width: 80px;
+    }
   }
 }
 
@@ -72,5 +77,101 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 71px;
+  }
+}
+
+.works__item--functional {
+  &::before{
+    content: "";
+    background-image: url("../img/icon_leaf.svg");
+    background-position: 17px 16px;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: url("../img/1figure.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: url("../img/1figure.svg");
+      position: absolute;
+      top: 0;
+      left: 112px;
+      z-index: -1;
+    }
+  }
+}
+
+.works__item--issued {
+  &::before{
+    content: "";
+    background-image: url("../img/icon_tub.svg");
+    background-position: 15px 13px;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: url("../img/2figure.svg");
+  }
+
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: url("../img/2figure.svg");
+      position: absolute;
+      top: 0;
+      left: 112px;
+      z-index: -1;
+    }
+  }
+}
+
+.works__item--replaces {
+  &::before{
+    content: "";
+    background-image: url("../img/icon_eat.svg");
+    background-position: 17px 15px;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: url("../img/3figure.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: url("../img/3figure.svg");
+      position: absolute;
+      top: 0;
+      left: 112px;
+      z-index: -1;
+    }
+  }
+}
+
+.works__item--time {
+  &::before{
+    content: "";
+    background-image: url("../img/icon_alarm.svg");
+    background-position: 14px 13px;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: url("../img/4figure.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: url("../img/4figure.svg");
+      position: absolute;
+      top: 0;
+      left: 112px;
+      z-index: -1;
+    }
   }
 }
