@@ -11,47 +11,47 @@
 
 <body class="page__body">
 
-  <header class="page-header">
-    <div class="container page-header__container">
-      <div class="page-header__menu">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__image" src="img/logo-mobile.svg" width="191" height="37.61"
-            alt="Логотип «Кэт энерджи»">
-        </a>
+  <header class="page-header page-header__background">
+      <div class="container page-header__container">
+        <div class="page-header__menu">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__image" src="img/logo-mobile.svg" width="191" height="37.61"
+              alt="Логотип «Кэт энерджи»">
+          </a>
+        </div>
+
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--current">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
 
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--current">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
+      <section class="promo">
+        <div class="container promo__container">
+          <h1 class="promo__title">Функциональное питание для котов</h1>
+          <p class="promo__intro">Занялся собой? Займись котом!
+            <img class="promo__image" src="img/index-can-mobile.png" width="280" height="270" alt="Продукция">
+          </p>
+          <a class="promo__toggle button" href="form.html">Подобрать программу</a>
         </div>
-      </nav>
-    </div>
+      </section>
   </header>
 
   <main class="page-main">
-    <section class="promo">
-      <div class="container promo__container">
-        <h1 class="promo__title">Функциональное питание для котов</h1>
-        <p class="promo__intro">Занялся собой? Займись котом!
-          <img class="promo__image" src="img/index-can-mobile.png" width="280" height="270" alt="Продукция">
-        </p>
-        <a class="promo__toggle button" href="form.html">Подобрать программу</a>
-      </div>
-    </section>
-
     <section class="programs container">
       <h2 class="visually-hidden">Варианты питания</h2>
       <article class="programs__wrapper programs__wrapper--slim">

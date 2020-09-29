@@ -5,6 +5,8 @@
   font-size: 14px;
   line-height: 18px;
   color: @text-color;
+  padding-left: 40px;
+  position: relative;
   // padding-bottom: 20px;
 
   &::before  {
@@ -83,13 +85,17 @@
 .works__item--functional {
   &::before{
     content: "";
+    top: 0;
+    left: 0;
     background-image: url("../img/icon_leaf.svg");
     background-position: 17px 16px;
     background-repeat: no-repeat;
   }
 
-  &::after {
-    content: url("../img/1figure.svg");
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: url("../img/1figure.svg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -106,17 +112,17 @@
 .works__item--issued {
   &::before{
     content: "";
+    top: 0;
+    left: 0;
     background-image: url("../img/icon_tub.svg");
     background-position: 15px 13px;
     background-repeat: no-repeat;
   }
 
-  &::after {
-    content: url("../img/2figure.svg");
-  }
-
   @media (min-width: @tablet-width) {
-
+    &::after {
+      content: url("../img/2figure.svg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -133,13 +139,17 @@
 .works__item--replaces {
   &::before{
     content: "";
+    top: 0;
+    left: 0;
     background-image: url("../img/icon_eat.svg");
     background-position: 17px 15px;
     background-repeat: no-repeat;
   }
 
-  &::after {
+  @media (min-width: @tablet-width) {
+    &::after {
     content: url("../img/3figure.svg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -156,15 +166,18 @@
 .works__item--time {
   &::before{
     content: "";
+    top: 0;
+    left: 0;
     background-image: url("../img/icon_alarm.svg");
     background-position: 14px 13px;
     background-repeat: no-repeat;
   }
 
-  &::after {
-    content: url("../img/4figure.svg");
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: url("../img/4figure.svg");
+    }
   }
-
   @media (min-width: @desktop-width) {
     &::after {
       content: url("../img/4figure.svg");
