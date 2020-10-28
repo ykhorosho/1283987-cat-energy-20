@@ -27,10 +27,10 @@
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--current">
+            <li class="site-list__item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a>Подбор программы</a>
             </li>
           </ul>
@@ -70,19 +70,21 @@
 
             <div class="selection__group">
               <h2 class="visually-hidden">Программа</h2>
-              <ul class="selection__list">
+              <ul class="selection__list-programm">
                 <li class="selection__item">
-                  <input class="selection__circle" id="filter-slimming" type="radio" name="program-slimming"
-                    value="slimming" checked>
-                  <label class="selection__label" for="filter-slimming">Похудение</label>
+                  <input class="visually-hidden selection__circle selection-input" type="radio" name="program-slimming" value="slimming"
+                    id="selection__slimming" checked>
+                  <label for="selection__slimming"><span class="selection__name">Похудение</span></label>
                 </li>
                 <li class="selection__item">
-                  <input class="selection__circle" id="filter-set" type="radio" name="program-set" value="set">
-                  <label class="selection__label" for="filter-set">Набор массы</label>
+                  <input class="visually-hidden selection__circle selection-input" type="radio" name="program-set" value="set"
+                    id="selection__set">
+                  <label for="selection__set">Набор массы</label>
                 </li>
                 <li class="selection__item">
-                  <input class="selection__circle" id="filter-advice" type="radio" name="program-advice" value="advice">
-                  <label class="selection__label" for="filter-advice">Не знаю (Нужен ваш совет)</label>
+                  <input class="visually-hidden selection__circle selection-input" type="radio" name="product-group" value="accessories"
+                    id="selection__accessories">
+                  <label for="selection__accessories">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </div>

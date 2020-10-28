@@ -1,17 +1,10 @@
 .selection__label {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: @text-color;
-}
+  margin-right: 11px;
 
-.selection__input ::-webkit-input-placeholder {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: @text-color;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
 
 .selection__title {
@@ -72,6 +65,7 @@
 
 .selection {
   .clear-list;
+  padding-top: 39px;
 
   @media (min-width: @tablet-width) {
     padding: 0 41px;
@@ -127,4 +121,83 @@
     display: flex;
     justify-content: space-between;
   }
+}
+
+.selection__item {
+  display: flex;
+  align-items: center;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.selection__input {
+  padding-top: 13px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  flex-grow: 1;
+  text-transform: uppercase;
+  color: @black-one;
+  border: 1px solid @grey-border;
+}
+
+.selection__item + label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.selection__circle + label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-color: @grey-border;
+  border-radius: 50%;
+}
+
+.selection__circle:checked + label::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 8px;
+  width: 14px;
+  height: 14px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.selection__list-programm {
+  padding: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: @grey-border;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: @grey-border;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.selection-input + label {
+  position: relative;
+  padding-left: 40px;
 }

@@ -36,7 +36,6 @@
 }
 
 .page-header__container {
-
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -54,15 +53,25 @@
 }
 
 .page-header__background {
-
   @media (min-width: @desktop-width) {
-    background-image: url(../img/index-background-desktop.png);
+    background-image: url("../img/index-background-desktop.png");
     background-repeat: no-repeat;
     background-position-x: right;
   }
 }
 
-.page-header__menu {
-  display: flex;
-  justify-content: space-between;
-}
+// .page-header__menu {
+//   display: flex;
+//   justify-content: space-between;
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     width: 100vw;
+//     height: 1px;
+//     top: 55px;
+//     background-color: @grey-border;
+//     left: 50%;
+//     transform: translate(-50%, 0);
+//   }
+// }

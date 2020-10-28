@@ -1,23 +1,54 @@
-.product__title-link {
+.product__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
   align-items: center;
   text-transform: uppercase;
+  width: 76px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 134px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+.product__title-link {
   color: @black-three;
 }
 
 .product__order {
   display: block;
+  font-family: "Oswald", "Arial", sans-serif;
   width: 280px;
   color: @white;
+  font-weight: normal;
   background-color: @basic_green;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
   padding: 7px 0;
+  margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 33px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
 }
 
 .product__list td {
@@ -25,8 +56,14 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+  order: 0;
   text-align: center;
   color: @text-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    text-align: right;
+  }
 }
 
 .product__list th {
@@ -34,6 +71,12 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+  color: @text-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    text-align: left;
+  }
 }
 
 .product__row {
@@ -41,13 +84,43 @@
 
   img {
     display: block;
+    position: relative;
+    margin-top: 20px;
   }
-}
 
-.product__title {
-  width: 76px;
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin-top: -73px;
+      height: 200px;
+      width: 168px;
+    }
+  }
 }
 
 .product__list {
   width: 142px;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    padding: 0;
+    height: 87px;
+    font-size: 16px;
+    margin: 17px 0 0;
+    line-height: 29px;
+    border-collapse: collapse;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 173px;
+  }
+}
+
+.product__list tr {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid;
+    border-color: @grey-border-two;
+  }
 }

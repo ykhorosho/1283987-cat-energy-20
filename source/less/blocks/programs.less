@@ -33,7 +33,6 @@
 }
 
 .programs__title--slim {
-
   &::before {
     content: "";
     position: absolute;
@@ -43,44 +42,44 @@
     width: 50px;
     left: 22px;
     top: 24px;
+  }
+
+  &::after {
+    content: url("../img/cat-slim.svg");
+    position: absolute;
+    left: 29px;
+    top: 22px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      height: 200px;
+      width: 200px;
+      left: 446px;
+      top: 92px;
     }
 
     &::after {
-      content: url("../img/cat-slim.svg");
-      position: absolute;
-      left: 29px;
-      top: 22px;
+      content: url("../img/cat-slim2.svg");
+      left: 476px;
+      top: 81px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      height: 100px;
+      width: 100px;
+      left: 52px;
+      top: 47px;
     }
 
-    @media (min-width: @tablet-width) {
-      &::before {
-        height: 200px;
-        width: 200px;
-        left: 446px;
-        top: 92px;
-      }
-
-      &::after {
-        content: url("../img/cat-slim2.svg");
-        left: 476px;
-        top: 81px;
-      }
+    &::after {
+      content: url("../img/cat-slim3.svg");
+      left: 67px;
+      top: 41px;
     }
-
-    @media (min-width: @desktop-width) {
-      &::before {
-        height: 100px;
-        width: 100px;
-        left: 52px;
-        top: 47px;
-      }
-
-      &::after {
-        content: url("../img/cat-slim3.svg");
-        left: 67px;
-        top: 41px;
-      }
-    }
+  }
 }
 
 .programs__title--pro {
@@ -93,44 +92,44 @@
     width: 50px;
     left: 22px;
     top: 24px;
+  }
+
+  &::after {
+    content: url("../img/cat-pro.svg");
+    position: absolute;
+    left: 13px;
+    top: 35px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      height: 200px;
+      width: 200px;
+      left: 446px;
+      top: 92px;
     }
 
     &::after {
-      content: url("../img/cat-pro.svg");
-      position: absolute;
-      left: 13px;
-      top: 35px;
+      content: url("../img/cat-pro2.svg");
+      left: 412px;
+      top: 135px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      height: 100px;
+      width: 100px;
+      left: 52px;
+      top: 47px;
     }
 
-    @media (min-width: @tablet-width)  {
-      &::before {
-        height: 200px;
-        width: 200px;
-        left: 446px;
-        top: 92px;
-      }
-
-      &::after {
-        content: url("../img/cat-pro2.svg");
-        left: 412px;
-        top: 135px;
-      }
+    &::after {
+      content: url("../img/cat-pro3.svg");
+      left: 33px;
+      top: 67px;
     }
-
-    @media (min-width: @desktop-width) {
-      &::before {
-        height: 100px;
-        width: 100px;
-        left: 52px;
-        top: 47px;
-      }
-
-      &::after {
-        content: url("../img/cat-pro3.svg");
-        left: 33px;
-        top: 67px;
-      }
-    }
+  }
 }
 
 .programs__description {
